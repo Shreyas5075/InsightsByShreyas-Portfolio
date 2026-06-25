@@ -18,6 +18,13 @@ const techColors = {
   'Web3.js': 'border-orange-500/30 text-orange-400',
   'Ethereum': 'border-indigo-500/30 text-indigo-400',
   'Smart Contracts': 'border-yellow-500/30 text-yellow-400',
+  'Scikit-learn': 'border-orange-500/30 text-orange-400',
+  'SciPy': 'border-blue-500/30 text-blue-400',
+  'Gemini API': 'border-cyan-500/30 text-cyan-400',
+  'Streamlit': 'border-red-500/30 text-red-400',
+  'SQL': 'border-amber-500/30 text-amber-400',
+  'XGBoost': 'border-green-500/30 text-green-400',
+  'SHAP': 'border-purple-500/30 text-purple-400',
 };
 
 export default function ProjectCard({ project, index }) {
