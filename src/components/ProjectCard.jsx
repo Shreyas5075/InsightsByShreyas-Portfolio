@@ -91,22 +91,13 @@ export default function ProjectCard({ project, index }) {
         {/* Action buttons — pushed to bottom */}
         <div className="mt-auto flex gap-3">
           <a
-            href={project.demoUrl || '#'}
+            href={project.githubUrl || 'https://github.com/shreyas5075?tab=repositories'}
             target="_blank"
             rel="noopener noreferrer"
             className="project-btn project-btn-primary"
           >
             <HiOutlineExternalLink size={14} />
-            View Demo
-          </a>
-          <a
-            href={project.pptUrl || '#'}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-btn project-btn-secondary"
-          >
-            <HiOutlineDocumentText size={14} />
-            View PPT / Research
+            View on GitHub
           </a>
         </div>
       </div>
