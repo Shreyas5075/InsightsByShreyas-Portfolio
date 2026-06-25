@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ProjectCard from './ProjectCard';
-import { HiOutlineDocumentText, HiOutlineChat, HiOutlineClipboardList, HiOutlineCube } from 'react-icons/hi';
+import { HiOutlineDocumentText, HiOutlineChat, HiOutlineClipboardList, HiOutlineCube, HiOutlineChartBar, HiOutlineLightningBolt } from 'react-icons/hi';
 
 const filters = [
   { key: 'all', label: 'All' },
@@ -80,6 +80,42 @@ const projects = [
     tech: ['Solidity', 'Web3.js', 'Ethereum', 'Smart Contracts'],
     gradientFrom: '#f59e0b',
     gradientTo: '#ef4444',
+    demoUrl: '#',
+    pptUrl: '#',
+  },
+  {
+    title: 'ApexIntelligence',
+    category: 'Telemetry Analytics Platform',
+    filter: 'ai',
+    icon: <HiOutlineLightningBolt />,
+    description:
+      'A real-time motorsport vehicle dynamics telemetry platform that automates performance analysis using high-frequency multi-channel sensor logs.',
+    highlights: [
+      'Implemented Dynamic Time Warping (DTW) to resample temporal sequences',
+      'Built an unsupervised anomaly pipeline using Isolation Forests',
+      'Orchestrated a multi-agent generative loop via the Gemini API',
+    ],
+    tech: ['Python', 'Scikit-learn', 'SciPy', 'Gemini API', 'Streamlit'],
+    gradientFrom: '#ef4444',
+    gradientTo: '#f97316',
+    demoUrl: '#',
+    pptUrl: '#',
+  },
+  {
+    title: 'Customer Churn Prediction',
+    category: 'Business Impact Dashboard',
+    filter: 'ai',
+    icon: <HiOutlineChartBar />,
+    description:
+      'An end-to-end churn prediction pipeline modeling targeted retention campaigns against estimated lifetime value, predicting $8.3M in revenue-at-risk.',
+    highlights: [
+      'Built pipeline using Scikit-learn and XGBoost achieving 83% ROC-AUC',
+      'Integrated SHAP-based explainability for transparent diagnostics',
+      'Deployed live interactive Streamlit dashboard for ROI analysis',
+    ],
+    tech: ['Python', 'SQL', 'XGBoost', 'SHAP', 'Streamlit'],
+    gradientFrom: '#10b981',
+    gradientTo: '#3b82f6',
     demoUrl: '#',
     pptUrl: '#',
   },
